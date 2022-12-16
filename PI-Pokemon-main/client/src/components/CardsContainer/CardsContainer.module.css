@@ -1,0 +1,9 @@
+.cardsContainer{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1em;
+    background-color: #113f67;
+    align-items: center;
+    justify-content: space-around;
+}

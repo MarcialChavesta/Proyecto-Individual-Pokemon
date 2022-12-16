@@ -128,7 +128,7 @@ const createPokemon = async (req, res) => {
     });
 
     await createPokemon.addType(typeDB);
-
+//console.log(createPokemon)
     res.send(`Personaje creado con éxito!!!!`);
   } catch (error) {
     console.log(error);
