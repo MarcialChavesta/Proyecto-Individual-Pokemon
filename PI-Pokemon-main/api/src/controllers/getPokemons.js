@@ -45,7 +45,7 @@ const pokemonsDb = async () => {
         },
       },
     });
-    console.log(pokemonFromDb);
+    //console.log(pokemonFromDb);
     return pokemonFromDb;
   } catch (error) {
     console.log("Error:", error);
@@ -82,10 +82,14 @@ const getAllPokemons = async (req, res) => {
 };
 
 const pokemonsQueryById = async () => {
+ try {
   const apiInfo = await pokemonsApi();
   const dbInfo = await pokemonsDb();
   const allPokemons = [...apiInfo, ...dbInfo];
   return allPokemons;
+ } catch (error) {
+  console.log(Error)
+ }
 };
 
 const getPokemonsById = async (req, res) => {
@@ -94,15 +98,16 @@ const getPokemonsById = async (req, res) => {
   let validate = id.includes("-");
   if (validate) {
     let dbId = await Pokemon.findByPk(id, { include: Type });
-    console.log(dbId);
+    //console.log(dbId);
     res.status(200).json([dbId]);
   } else {
     if (id) {
-      const apiResponse = allPokemons.filter(
-        (pokemon) => pokemon.id === parseInt(id)
+      const apiResponse = allPokemons.find(
+        (pokemon) => pokemon.id == id
       );
-      apiResponse.length
-        ? res.status(200).send(apiResponse)
+      console.log(apiResponse)
+      apiResponse
+        ? res.status(200).json(apiResponse)
         : res.status(400).send("Error");
     }
   }

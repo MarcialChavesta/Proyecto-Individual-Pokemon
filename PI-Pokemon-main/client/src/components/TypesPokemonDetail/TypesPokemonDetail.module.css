@@ -1,0 +1,87 @@
+.cardTypes {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.type {
+  color: rgb(247, 243, 243);
+  font-size: 14px;
+  padding: 3px 15px 5px 15px;
+  border-radius: 10px;
+}
+
+.type[value="grass"] {
+  background-color: #65da2f;
+  color: #000;
+}
+.type[value="fire"] {
+  background: #e26e1a;
+}
+.type[value="water"] {
+  background-color: #2857ce;
+}
+.type[value="ground"] {
+  background: conic-gradient(
+    rgb(218, 208, 78) 0deg 90deg,
+    rgb(168, 144, 7) 90deg 270deg,
+    rgb(218, 208, 78) 270deg 360deg
+  );
+  color: #000;
+}
+.type[value="electric"] {
+  background-color: #f2c412;
+}
+.type[value="flying"] {
+  background: conic-gradient(
+    rgb(54, 177, 171) 0deg 90deg,
+    rgb(179, 176, 176) 90deg 270deg,
+    rgb(54, 177, 171) 270deg 360deg
+  );
+  color: #000;
+}
+.type[value="poison"] {
+  background-color: #a555a4;
+}
+.type[value="normal"] {
+  background-color: #777770;
+  color: #000;
+}
+.type[value="psychic"] {
+  background-color: #f7316b;
+}
+.type[value="dragon"] {
+  background-color: #5819f3;
+}
+.type[value="ice"] {
+  background-color: #73caca;
+}
+.type[value="rock"] {
+  background-color: #a08b31;
+}
+.type[value="bug"] {
+  background-color: #3b881d;
+}
+.type[value="ghost"] {
+  background-color: #5c497f;
+}
+.type[value="fighting"] {
+  background: #a62a22;
+}
+.type[value="fairy"] {
+  background: #f392ca;
+  color: #000;
+}
+.type[value="dark"] {
+  background: #5c493a;
+}
+.type[value="steel"] {
+  background: #9d9cbf;
+}
+.type[value="shadow"] {
+  background: #562ba6;
+}
+.type[value="unknown"] {
+  background: #000;
+}
