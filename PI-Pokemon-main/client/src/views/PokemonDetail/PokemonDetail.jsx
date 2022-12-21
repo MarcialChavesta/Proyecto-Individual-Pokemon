@@ -5,6 +5,7 @@ import { getPokemonDetail, clearDetail } from "../../redux/actions";
 import { useParams } from "react-router-dom";
 import Loading from "../../components/Loading/Loading";
 import TypesPokemonDetail from "../../components/TypesPokemonDetail/TypesPokemonDetail";
+import style from "./PokemonDetail.module.css";
 
 const PokemonDetail = () => {
   const dispatch = useDispatch();
@@ -21,18 +22,30 @@ const PokemonDetail = () => {
       {loading ? (
         <Loading />
       ) : (
-        <div>
-            <h1>N°: {pokemonInfo.id}</h1>
-            <img src={pokemonInfo.img} alt ={pokemonInfo.name}/>
-          <h1>Nombre: {pokemonInfo.name}</h1>
-          <h1>HP: {pokemonInfo.hp}</h1>
-          <h1>Ataque: {pokemonInfo.attack}</h1>
-          <h1>Defensa: {pokemonInfo.defense}</h1>
-          <h1>Peso: {pokemonInfo.weight}</h1>
-          <h1>Altura: {pokemonInfo.height}</h1>
-          <TypesPokemonDetail types={pokemonInfo.types}/>
-         
-
+        <div className={style.bgImg}>
+          <div>
+            <h1 className={style.id}>{pokemonInfo.id}</h1>
+            <div>
+              <h1 className={style.name}>{pokemonInfo.name}</h1>
+            </div>
+            <div>
+              <img
+                src={pokemonInfo.img}
+                alt={pokemonInfo.name}
+                className={style.imgPok}
+              />
+            </div>
+          </div>
+          <div className={style.types}><TypesPokemonDetail types={pokemonInfo.types} /></div>
+          
+          <h1 className={style.peso}>Peso: {(pokemonInfo.weight)/10} kg</h1>
+          <h1  className={style.altura}>Altura: {(pokemonInfo.height)/10} m</h1>
+          <h1 className={style.hp}>HP: {pokemonInfo.hp}</h1>
+          <div className={style.ataque}><h1 >Ataque: {pokemonInfo.attack} Defensa: {pokemonInfo.defense}</h1>
+          
+          </div>
+          
+          
         </div>
       )}
     </>

@@ -1,33 +1,35 @@
 
-  .pokebola {
-      position: relative;
-      width: 300px;
-      height: 300px;
-      background-color: #FFF;
-      border: 5px solid #000;
-      border-radius: 50%;
-      box-shadow: inset -10px 60px 0 10px rgba(228, 12, 12, 0.918);
-      overflow: hidden;
-      margin: 20px auto;
-      
-  }
-  
 
   .card{
     background-color: #e7eaf6;
     border-radius: 10px ;
     text-align: center;
-    width: 20em;
-    height: 32em;
+    width: 18em;
+    height: 25em;
     overflow: hidden;
-    padding: 2em;
+    padding: 1em;
     box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    margin: auto 0
 
   }
 
   .card:hover {
     animation: bounce 0.5s linear;
 }
+
+.pokebola {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #FFF;
+  border: 3px solid #113f67;
+  border-radius: 50%;
+  box-shadow: inset -10px 60px 0 10px rgba(228, 12, 12, 0.918);
+  overflow: hidden;
+  margin: 20px auto;
+  
+}
+
 @keyframes bounce {
     20% {
         transform: translateY(-6px);
@@ -52,10 +54,16 @@
     height: 87%;
     padding: 1em;
     
+    
   }
   .iconPokebola{
     width: 15%;
     height: 15%;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
    
     
+  }
+  .centrar{
+    margin: auto 0
   }

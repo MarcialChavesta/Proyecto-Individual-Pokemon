@@ -1,0 +1,76 @@
+.bgImg {
+  background-image: url("../../images/templatePokemon.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 33%;
+  height: 33%;
+  overflow: hidden;
+  margin: auto;
+  color: rgb(59, 3, 3);
+  
+}
+
+.id {
+  color: rgb(7, 15, 1);
+  margin-top: 45px;
+  margin-bottom: -300px;
+  margin-left: 35px;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+.imgPok {
+  margin-top: -10px;
+  margin-left: 98px;
+  height: 55%;
+  width: 55%;
+}
+.name {
+  margin-top: 230px;
+  margin-left: 108px;
+  font-family: cursive;
+  font-size: 30px;
+  color: black;
+}
+.peso {
+  margin-top: 4px;
+  margin-left: 125px;
+  font-family: cursive;
+  font-size: 30px;
+  color: black;
+}
+.altura {
+    margin-top: -3px;
+    margin-left: 125px;
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+  }
+  .types {
+    margin-top: 20px;
+    margin-left: -40px;
+   
+    
+  }
+  .hp {
+    margin-top: 72px;
+    margin-left: 65px;
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+  }
+  .ataque {
+    margin-top: -80.5px;
+    margin-left: 239px;
+    font-family: cursive;
+    font-size: 14px;
+    color: black;
+  }
+  .defensa {
+    margin-top: -30px;
+    margin-left: 215px;
+    font-family: cursive;
+    font-size: 30px;
+    color: black;
+  }

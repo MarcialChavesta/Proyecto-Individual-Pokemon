@@ -4,7 +4,7 @@ const { Pokemon, Type } = require("../db");
 const pokemonsApi = async () => {
   try {
     let pokemonsFromApi = await axios.get(
-      "https://pokeapi.co/api/v2/pokemon?offset=0&limit=40"
+      "https://pokeapi.co/api/v2/pokemon?offset=0&limit=100"
     );
     pokemonsFromApi = pokemonsFromApi.data.results.map((pok) => {
       return pok.url;
