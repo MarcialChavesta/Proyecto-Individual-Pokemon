@@ -1,48 +1,47 @@
-import React from 'react'
-import style from "../Paginated/Paginated.module.css"
+import React from "react";
+import style from "../Paginated/Paginated.module.css";
 
 const Paginated = ({ pageNumber, amountPerPage, totalAmount, currentPage }) => {
-    const pageNumbers = [];
+  const pageNumbers = [];
+  for (let i = 1; i <= Math.ceil(totalAmount / amountPerPage); i++) {
+    pageNumbers.push(i);
+  }
 
-	for (let i = 1; i <= Math.ceil(totalAmount / amountPerPage); i++) {
-		pageNumbers.push(i);
-	}
+  const prevHandler = () => {
+    if (currentPage <= 1) return;
+    pageNumber(currentPage - 1);
+  };
+  const nextHandler = () => {
+    if (currentPage >= pageNumbers.length) return;
+    pageNumber(currentPage + 1);
+  };
 
-	const prevHandler = () => {
-		if (currentPage <= 1) return;
-		pageNumber(currentPage - 1);
-	};
-	const nextHandler = () => {
-		if (currentPage >= pageNumbers.length) return;
-		pageNumber(currentPage + 1);
-	};
-
-    return (
-        <div className={style.paginatedContainer}>
-        <div>
-            <button className={style.currentButton} onClick={() => prevHandler()}>
-                Prev
-            </button>
-            {pageNumbers &&
-                pageNumbers.map((num) => {
-                    return (
-                        <button
-                            key={num}
-                            className={
-                                currentPage === num ? style.buttonActive : style.numberButton
-                            }
-                            onClick={() => pageNumber(num)}
-                        >
-                            {num}
-                        </button>
-                    );
-                })}
-            <button className={style.currentButton} onClick={() => nextHandler()}>
-                Next
-            </button>
-        </div>
+  return (
+    <div className={style.paginatedContainer}>
+      <div>
+        <button className={style.currentButton} onClick={() => prevHandler()}>
+          ◀
+        </button>
+        {pageNumbers &&
+          pageNumbers.map((num) => {
+            return (
+              <button
+                key={num}
+                className={
+                  currentPage === num ? style.buttonActive : style.numberButton
+                }
+                onClick={() => pageNumber(num)}
+              >
+                {num}
+              </button>
+            );
+          })}
+        <button className={style.currentButton} onClick={() => nextHandler()}>
+          ▶
+        </button>
+      </div>
     </div>
-);
-}
+  );
+};
 
-export default Paginated
+export default Paginated;

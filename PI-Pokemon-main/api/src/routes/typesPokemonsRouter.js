@@ -1,7 +1,7 @@
 const { Router } = require("express");
 const typesPokemonsRouter = Router();
-const{getTypes} = require("../controllers/getTypes")
+const { getTypes } = require("../controllers/getTypes");
 
-typesPokemonsRouter.get("/",getTypes)
+typesPokemonsRouter.get("/", getTypes);
 
-module.exports = typesPokemonsRouter
+module.exports = typesPokemonsRouter;

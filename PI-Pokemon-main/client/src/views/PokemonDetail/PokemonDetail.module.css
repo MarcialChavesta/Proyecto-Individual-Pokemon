@@ -8,23 +8,32 @@
   overflow: hidden;
   margin: auto;
   color: rgb(59, 3, 3);
-  
+  border-radius: 5%;
 }
 
 .id {
   color: rgb(7, 15, 1);
   margin-top: 45px;
   margin-bottom: -300px;
-  margin-left: 35px;
+  margin-left: 38px;
   font-family: cursive;
   font-size: 30px;
+  font-weight: bold;
+}
+.id2 {
+  color: rgb(7, 15, 1);
+  margin-top: 48px;
+  margin-bottom: -300px;
+  margin-left: 25px;
+  font-family: cursive;
+  font-size: 25px;
   font-weight: bold;
 }
 .imgPok {
   margin-top: -10px;
   margin-left: 98px;
-  height: 55%;
-  width: 55%;
+  height: 250px;
+  width: 250px;
 }
 .name {
   margin-top: 230px;
@@ -32,45 +41,99 @@
   font-family: cursive;
   font-size: 30px;
   color: black;
+  text-transform: capitalize;
 }
-.peso {
-  margin-top: 4px;
-  margin-left: 125px;
+.name2 {
+  margin-top: 235px;
+  margin-left: 108px;
   font-family: cursive;
   font-size: 30px;
   color: black;
+  text-transform: capitalize;
 }
-.altura {
-    margin-top: -3px;
-    margin-left: 125px;
-    font-family: cursive;
-    font-size: 30px;
-    color: black;
-  }
-  .types {
-    margin-top: 20px;
-    margin-left: -40px;
-   
-    
-  }
-  .hp {
-    margin-top: 72px;
-    margin-left: 65px;
-    font-family: cursive;
-    font-size: 30px;
-    color: black;
-  }
-  .ataque {
-    margin-top: -80.5px;
-    margin-left: 239px;
-    font-family: cursive;
-    font-size: 14px;
-    color: black;
-  }
-  .defensa {
-    margin-top: -30px;
-    margin-left: 215px;
-    font-family: cursive;
-    font-size: 30px;
-    color: black;
-  }
+.weight {
+  margin-top: -10px;
+  margin-left: 125px;
+  font-family: cursive;
+  font-size: 14px;
+  color: black;
+}
+.height {
+  margin-top: -3px;
+  margin-left: 125px;
+  font-family: cursive;
+  font-size: 14px;
+  color: black;
+}
+.types {
+  margin-top: 20px;
+  margin-left: -40px;
+}
+.hp {
+  
+  margin-top: 45px;
+  margin-left: 35px;
+  font-family: cursive;
+  font-size: 14px;
+  color: rgb(224, 15, 15);
+}
+.attack {
+  margin-top: -58px;
+  margin-left: 35px;
+  font-family: cursive;
+  font-size: 14px;
+  color: rgb(45, 7, 95);
+}
+.speed {
+  margin-top: -60.5px;
+  margin-left: 230px;
+  font-family: cursive;
+  font-size: 14px;
+  color: rgb(17, 109, 58);
+}
+.defense {
+  margin-top: -5px;
+  margin-left: 230px;
+  font-family: cursive;
+  font-size: 14px;
+  color: rgb(233, 101, 24);
+}
+
+.backg {
+  background-image: url("../../images/fondoHome.jpg");
+  background-repeat: no-repeat;
+}
+.botom {
+  margin-top: -550px;
+  margin-left: 380px;
+  gap: 1em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.iconPokebola {
+ 
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  margin-left: 120px;
+  height: 50px;
+  width: 50px;
+}
+
+.iconInicio {
+ 
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  margin-left: 120px;
+  margin-top: 165px;
+  height: 50px;
+  width: 50px;
+}
+.iconAbout {
+ 
+  filter: brightness(1.1);
+  mix-blend-mode: multiply;
+  margin-left: 120px;
+  height: 50px;
+  width: 50px;
+}

@@ -1,0 +1,23 @@
+/************* Fondo Imagen & Color ***************/
+.bgAbout {
+       background-color: #113f67;
+      }
+  
+  .aboutImg{
+    display: block;
+    margin: auto;
+    width: 50%;
+    height: 50%;
+   
+  }
+  .button{
+    cursor: pointer;
+    background-color: #0b0b0c;
+    color:#eff1f3;
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;;
+    display: block;
+    margin: auto;
+    font-size: 30px;
+  }

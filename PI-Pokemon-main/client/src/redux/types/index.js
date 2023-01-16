@@ -5,8 +5,9 @@ export const GET_POKEMON_DETAIL = "GET_POKEMON_DETAIL";
 export const CLEAR_DETAIL = "CLEAR_DETAIL";
 export const GET_POKEMON_NAME = "GET_POKEMON_NAME";
 export const CREATE_POKEMON = "CREATE_POKEMON";
-export const ORDER_AZ = "ORDER_AZ";
-export const ORDER_ZA = "ORDER_ZA";
-export const ORDER_ATTACK_ASC = "ORDER_ATTACK_ASC";
-export const ORDER_ATTACK_DESC = "ORDER_ATTACK_DESC";
+export const ORDER_BY_NAME = "ORDER_BY_NAME";
+export const ORDER_BY_ATTACK = "ORDER_BY_ATTACK";
 export const FILTER_TYPES = "FILTER_TYPES";
+export const FILTER_CREATED="FILTER_CREATED";
+export const FILTER_SPEED ="FILTER_SPEED";
+
